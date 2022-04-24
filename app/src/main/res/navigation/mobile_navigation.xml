@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_salle">
+
+    <fragment
+        android:id="@+id/nav_machine"
+        android:name="ma.projet.sqlite.ui.main.MachineFragmenet"
+        android:label="MACHINE"
+        tools:layout="@layout/main_fragment2" />
+
+    <fragment
+        android:id="@+id/nav_salle"
+        android:name="ma.projet.sqlite.ui.main.SalleFragment2"
+        android:label="SALLE"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/nav_machine_par_salle"
+        android:name="ma.projet.sqlite.ui.main.SalleMachineFragment"
+        android:label="MACHIE PAR SALLE"
+        tools:layout="@layout/main_fragment4" />
+</navigation>

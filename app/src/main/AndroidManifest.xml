@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ma.projet.sqlite">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sqlite">
+        <activity
+            android:name=".SalleMachine"
+            android:exported="false" />
+        <activity
+            android:name=".MachineFragmenet"
+            android:exported="false" />
+        <activity
+            android:name=".SalleFragment"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListSalleActivity"
+            android:label="@string/title_activity_list_salle" />
+        <activity
+            android:name=".Main"
+            android:label="Gestion des Salles" />
+        <activity
+            android:name=".ModifierActivity"
+            android:label="Modifier la salle " />
+        <activity
+            android:name=".MainMachine"
+            android:label="Gestion des machines" />
+        <activity
+            android:name=".ListeMachines"
+            android:label="Liste des Machines" />
+        <activity
+            android:name=".ModifierMachine"
+            android:label="Modifier la machine" />
+        <activity
+            android:name=".ListeMachinesSalles"
+            android:label="Machines de la salle " />
+        <activity
+            android:name=".MachineBySalle"
+            android:label="Liste Machines des salles" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+    </application>
+
+</manifest>
